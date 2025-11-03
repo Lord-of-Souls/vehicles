@@ -1,6 +1,8 @@
-import streamlit as st
-import pandas as pd
-import plotly.express as px
+import streamlit as st # type: ignore
+import pandas as pd # type: ignore
+import plotly.express as px # type: ignore
+
+st.header('Preço de veiculos x Quilometragem')
 
 car_data = pd.read_csv('vehicles_us.csv')  # lendo os dados
 hist_button = st.button('Criar histograma')  # criar um botão
